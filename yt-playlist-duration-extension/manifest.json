@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Playlist Duration",
+  "version": "1.0",
+  "description": "This tool helps you see the total duration of a YouTube playlist when you press Ctrl+Shift+Y",
+  "permissions": ["scripting", "activeTab"], 
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "show-totalTime": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      },
+      "description": "Show total playlist duration"
+    }
+  }
+}
